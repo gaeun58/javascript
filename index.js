@@ -13,7 +13,7 @@ function greetings() {
     console.log('안녕');
     console.log('Guten Tag');
     console.log('Bonjour');
-};
+}
 // 함수 호출
 greetings();
 
@@ -32,3 +32,28 @@ console.log('2절');
 console.log('남산 위에 저 소나무 철갑을 두른 듯');
 console.log('바람서리 불변함은 우리 기상일세');
 printChorus();
+
+/*
+1MB = 1024KB
+1GB = 1024MB
+1TB = 1024GB 라고 합니다.
+
+(출력예시)
+2TB는
+2048GB 입니다.
+2TB는
+2097152MB 입니다.
+ */
+
+function teraToGiga(volume) {
+    console.log(volume + 'TB는' )
+    console.log(volume * 1024 + 'GB 입니다.')
+}
+
+function teraToMega(volume) {
+    console.log(volume + 'TB는')
+    console.log(volume * 1024 * 1024 + 'MB 입니다.')
+}
+
+teraToGiga(2);
+teraToMega(2);
