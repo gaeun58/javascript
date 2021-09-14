@@ -66,3 +66,12 @@ function bmiCalculator(name, weight, tall) {
 bmiCalculator('홀쭉이', 43.52, 160);
 bmiCalculator('코린이', 61.25, 175);
 bmiCalculator('통통이', 77.76, 180);
+
+// 불린
+console.log(true && true); /*and*/
+console.log(true || false); /*or*/
+console.log(!true); /*반대값*/
+
+// typeof 연산자
+// 형 변환
+console.log(Number('10') + Number('5'));
