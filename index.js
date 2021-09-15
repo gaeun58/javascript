@@ -75,3 +75,46 @@ console.log(!true); /*반대값*/
 // typeof 연산자
 // 형 변환
 console.log(Number('10') + Number('5'));
+
+//if문
+function checkHeight(height) {
+    if (height >= 140) {
+        console.log('탑승이 가능합니다.');
+    } else {
+        console.log('탑승이 불가능합니다.');
+    }
+}
+
+checkHeight(140);
+checkHeight(135);
+checkHeight(170);
+
+/*else if
+A: 90점 이상
+B: 80점 이상 90점 미만
+C: 70점 이상 80점 미만
+D: 60점 이상 70점 미만
+F: 60점 미만
+*/
+function printGrade(midtermScore, finalScore){
+    let totalScore = midtermScore + finalScore;
+    if (totalScore >= 90) {
+        console.log('A');
+    } else if (totalScore >= 80) {
+        console.log('B');
+    }
+    else if (totalScore >= 70) {
+        console.log('C');
+    }
+    else if (totalScore >= 60) {
+        console.log('D');
+    }
+    else if (totalScore < 60) {
+        console.log('F');
+    }
+}
+
+printGrade(25, 35);
+printGrade(50, 45);
+printGrade(29, 24);
+printGrade(37, 42);
