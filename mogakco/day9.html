@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>favorite movie</title>
+    <style>
+        .hide {
+          display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My favorite movies</h1>
+    <button id="frozen" onclick="showMovieInfo(frozen)">Frozen1</button>
+    <button id="aladdin" onclick="showMovieInfo(aladdin)">Aladdin</button>
+    <button id="lalaland" onclick="showMovieInfo(lalaland)">La la land</button>
+    <h2 class="movieTitle"></h2>
+    <ul class="info hide">
+        <li class="openingDay"></li>
+        <li class="genre"></li>
+        <li class="cast"></li>
+    </ul>
+    <script src=./day9.js></script>
+</body>
+</html>
